@@ -1,0 +1,183 @@
+body {
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: lighter;
+}
+
+#colorDisplay {
+    font-size: 400%;
+}
+
+.box {
+    min-width: 300px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #fdfdfd;
+    box-shadow: 0px 0px 40px #0000002b;
+    /* box-shadow:  20px 20px 60px #d7d7d7, 
+                -20px -20px 60px #ffffff; */
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#stripe {
+    height: 30px;
+    align-items: center;
+    /* border: 1px solid springgreen; */
+    display: flex;
+    padding: 0 11%;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+
+
+}
+
+#react {
+    font-size: 180%;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: red;
+}
+
+#container {
+    min-width: 300px;
+    max-width: 600px;
+    /* border: 1px solid greenyellow; */
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.square {
+    border: 4px solid #86868629;
+    width: 30%;
+    padding-bottom: 30%;
+    /* background-color: gray; */
+    margin: 1%;
+    border-radius: 20px;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;  
+    -ms-transition: background 0.5s;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+    
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    align-items: center;
+    text-align: center;
+    background: none;
+    height: 100%;
+    font-size: 100%;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    background-color: #f4f4f4; 
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;  
+    -ms-transition: 0.4s;
+    outline: none;
+}
+    button:hover {
+        border: 2px solid black;
+        transition: none;
+    }  
+#resetBtn:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+   
+
+
+
+@media (max-width: 630px) {
+    #colorDisplay {
+        font-size: 300%;
+    }
+    #react {
+        font-size: 150%;
+    }
+    .square {
+        width: 28%;
+        padding-bottom: 28%;       
+    }
+    #stripe {
+        /* height: 50px; */
+        padding: 0 7%;
+        flex-wrap: nowrap;
+        font-size: 90%;
+    }
+    button {
+        font-size: 90%;
+    }   
+}
+
+@media (max-width: 480px){
+    h1 {
+        font-size: 180%;
+    }
+    #colorDisplay {
+        font-size: 250%;
+    }
+    #stripe {
+        /* height: 50px; */
+        padding: 0 3%;
+        flex-wrap: nowrap;
+        font-size: 85%;
+    }
+    button {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 375px){
+    h1 {
+        font-size: 150%;
+    }
+    #colorDisplay {
+        font-size: 250%;
+    }
+    #stripe {
+        /* height: 50px; */
+        padding: 0 4%;
+        flex-wrap: nowrap;
+        font-size: 80%;
+    }
+    button {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 330px){
+    h1 {
+        font-size: 120%;
+    }
+    #colorDisplay {
+        font-size: 200%;
+    }
+    #stripe {
+        /* height: 50px; */
+        padding: 0 4%;
+        flex-wrap: nowrap;
+        font-size: 60%;
+    }
+
+    button {
+        font-size: 60%;
+    }
+}
